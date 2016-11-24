@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>块级标签与行内标签</title>
+		<style type="text/css">
+			#div1,
+			#div2 {
+				background: lightblue;
+			}
+			span {
+				width: 100px;
+				/*无效*/
+				height: 20px;
+				/*无效*/
+				margin: 20px;
+				/*水平方向有效，垂直方向无效*/
+				padding: 20px;
+				/*水平方向有效，垂直方向无效*/
+			}
+			#div3{
+				width: 500px;
+				border: 1px solid #ADD8E6;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>块级标签与行内标签</h2>
+		<div id="div1">div1</div>
+		<div id="div2">div2</div>
+		<div id="div3">
+			<span id="span1">span1</span>
+			<span id="span2">span2</span>
+			<span id="span3">span3</span>
+			<span id="span4">spanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspan4</span>
+		</div>
+	</body>
+</html>
