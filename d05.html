@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>盒子模型</title>
+		<style type="text/css">
+			#box{
+				width: 800px;
+				padding: 10px;
+				border: 5px solid blue;
+				margin: 10px;
+			}
+			.sbox{
+				display: inline-block;
+				padding: 10px;  /*380*/
+				margin: 10px;   /*360*/
+				border: solid 10px coral;  /*340*/
+				background: lightblue;
+				width: 340px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="sbox">Left</div><div class="sbox">Right</div>
+		</div>
+	</body>
+</html>
