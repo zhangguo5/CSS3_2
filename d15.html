@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#div1,
+			#div2 {
+				height: 28px;
+				line-height: 28px;
+				color: #777;
+			}
+			
+			input {
+				height: 26px;
+				line-height: 26px;
+				border: 1px solid blue;
+				padding-left: 3px;
+				width: 180px;
+			}
+			
+			#div1 input {
+				border-radius: 5px 5px 0 0;
+			}
+			
+			#div2 {
+				margin-top: -2px;
+			}
+			
+			#div2 input {
+				border-radius: 0 0 5px 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="div1">
+			帐号：<input type="text" placeholder="请输入用户名" />
+		</div>
+		<div id="div2">
+			密码：<input type="text" placeholder="请输入密码" />
+		</div>
+	</body>
+
+</html>
